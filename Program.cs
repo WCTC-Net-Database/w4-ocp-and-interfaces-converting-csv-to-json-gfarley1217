@@ -75,7 +75,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Character not found.");
+            Console.WriteLine("Character not found."); //Initial commit
         }
     }
 }
