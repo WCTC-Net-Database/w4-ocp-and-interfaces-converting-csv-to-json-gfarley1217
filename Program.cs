@@ -11,7 +11,7 @@ class Program
 
     static void Main()
     {
-        string filePath = "input.csv"; // Default to CSV file
+        string filePath = "Files/input.json"; // Default to CSV file
         fileHandler = new CsvFileHandler(); // Default to CSV handler
         characters = fileHandler.ReadCharacters(filePath);
 
