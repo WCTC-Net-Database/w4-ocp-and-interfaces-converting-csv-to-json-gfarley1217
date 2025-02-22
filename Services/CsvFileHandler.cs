@@ -13,6 +13,7 @@ namespace W4_assignment_template.Services
         public List<Character> ReadCharacters(string filePath)
         {
             var characters = new List<Character>();
+            var lines = File.ReadAllLines(filePath);
 
             using (var reader = new StreamReader(filePath))
             {

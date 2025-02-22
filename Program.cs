@@ -12,7 +12,7 @@ class Program
     static void Main()
     {
         string filePath = "Files/input.json"; // Default to CSV file
-        fileHandler = new CsvFileHandler(); // Default to CSV handler
+        fileHandler = new JsonFileHandler(); // Default to CSV handler
         characters = fileHandler.ReadCharacters(filePath);
 
         while (true)

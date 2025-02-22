@@ -11,9 +11,9 @@ namespace W4_assignment_template.Services
     {
         public List<Character> ReadCharacters(string filePath)
         {
-            var jsonString = File.ReadAllText(filePath);
-            var characters = JsonSerializer.Deserialize<List<Character>>(jsonString);
-            return characters ?? new List<Character>(); // This line taught me about the null-coalescing operator which I had been unaware of
+            var json = File.ReadAllText(filePath);
+
+            return JsonConvert.DeserializeObject<List<Character>>(json);
         }
 
         public void WriteCharacters(string filePath, List<Character> characters)
